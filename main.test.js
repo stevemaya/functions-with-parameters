@@ -4,9 +4,27 @@ Your code goes below.
 
 */
 
+let x = 3;
+let y = 10;
+let z = 5;
+let name = 'Steve';
+let greeting = 'HEY';
 
+function multiply(otherNumber){
+  x = x * otherNumber;
+}
 
+function modYBy(thisNumber){
+y = y % thisNumber;
+}
 
+function opposite(reverse){
+  z = -reverse;
+}
+
+function yellAt(name){
+greeting = greeting + ', ' + name  + '!';
+}
 
 
 /*********************************************************************************************************************
@@ -71,7 +89,7 @@ describe('multiply', () => {
   it(`multiplies x by the given parameter'`, () => {
     multiply(15);
     multiply(3);
-    expect(x).toBe(135)
+    expect(x).toBe(135);
   })
 });
 
